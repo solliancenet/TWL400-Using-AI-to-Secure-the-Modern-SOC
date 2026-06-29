@@ -1,0 +1,8 @@
+// Fix: reduce sidebar site-title font size so the full title renders
+// without being clipped in the just-the-docs theme header area.
+.site-title {
+  font-size: 0.9rem !important;
+  line-height: 1.4 !important;
+  white-space: normal !important;
+  overflow: visible !important;
+}
