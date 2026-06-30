@@ -53,7 +53,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - CLAUDE.md
+  - AGENTS.md
   - LICENSE
   - SECURITY.md
   - SUPPORT.md
