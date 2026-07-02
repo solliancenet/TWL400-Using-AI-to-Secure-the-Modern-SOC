@@ -337,4 +337,9 @@
     "Stage": "5-Endpoint",
     "Account": "mariya.petrova@{DOMAIN}",
     "Device": "OPS-LT-0427",
-   
+    "SourceIP": "102.89.42.17",
+    "Action": "EncodedPowerShellExecution",
+    "Severity": "High",
+    "Details": "Encoded PowerShell beacon update_check.ps1 executed on OPS-LT-0427 under mariya.petrova context; base64-encoded command decoded to HTTP callback to 102.89.42.17:4444; endpoint telemetry confirms script execution and outbound connection attempt"
+  }
+]
