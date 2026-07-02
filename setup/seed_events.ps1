@@ -139,3 +139,12 @@ if (-not $DryRun) {
 }
 
 # Send all events in a single batch — preserves chronological interleaving
+Write-Host ""
+Write-Host "-- All events --"
+Send-Events -CustomerId $customerId -SharedKey $sharedKey -Events $allEvents -BatchName "all events"
+
+Write-Host ""
+Write-Host "Done."
+if (-not $DryRun) {
+    Write-Host "Allow 5-10 minutes for events to appear in Log Analytics."
+}

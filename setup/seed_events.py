@@ -236,5 +236,19 @@ def main():
     else:
         workspace_id = shared_key = None
 
-    # Post all events in a single batch — preserves chronological interleaving
-    print("\n── All events ───────────────────────────────────────�
+    # Post all events in a single batch -- preserves chronological interleaving
+    print("\n-- All events " + "-" * 46)
+    ok = post_events(workspace_id, shared_key, events, args.dry_run)
+
+    print("")
+    if ok:
+        print("Done. Events posted successfully.")
+        if not args.dry_run:
+            print("Allow 5-10 minutes for events to appear in Log Analytics.")
+    else:
+        print("ERROR: Failed to post events. Check output above.")
+        sys.exit(1)
+
+
+if __name__ == "__main__":
+    main()
